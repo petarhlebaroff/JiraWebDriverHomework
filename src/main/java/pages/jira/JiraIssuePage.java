@@ -111,6 +111,8 @@ public class JiraIssuePage extends BaseJiraPage {
 
     public void assertIssueCreated() {
         actions.waitForElementVisible("jira.createIssue.successMessage");
+        actions.waitForElementVisible("//button[@data-testid='platform.ui.flags.common.ui.common-flag-v2-dismiss']");
+        actions.clickElement("//button[@data-testid='platform.ui.flags.common.ui.common-flag-v2-dismiss']");
     }
 
     public void linkStoryToBug() throws InterruptedException {
