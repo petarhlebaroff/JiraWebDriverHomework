@@ -119,36 +119,34 @@ public class JiraIssuePage extends BaseJiraPage {
         actions.waitForElementVisible("//button[@data-testid='issue-navigator.common.ui.refresh-button.refresh-button']");
         actions.clickElement("//button[@data-testid='issue-navigator.common.ui.refresh-button.refresh-button']");
 
+        Thread.sleep(3000);
+
         actions.waitForElementVisible("//p[@class='_11127mnp _1q091wmp _pytkt94y _5hv9t94y _2x4g1n1a _12hv1n1a _x5bd1n1a _1rgf1n1a _1yzy15vq _bgrh15vq _v69yidpf _ogxmidpf _1qtqidpf _n9z4idpf _khufstnw _15pj1ule _d7ff1l7b _1j8614y2 _1qrc1l7b _4yng14y2 _1vzltlke _1ioh1l7b _vrjh14ae _1hhy73ad _1emz73ad _1efl8q0r _c2fy18uv _ynfu18uv _7el91vt6 _15pqglyw'][descendant::text()='List view']");
         actions.clickElement("//p[@class='_11127mnp _1q091wmp _pytkt94y _5hv9t94y _2x4g1n1a _12hv1n1a _x5bd1n1a _1rgf1n1a _1yzy15vq _bgrh15vq _v69yidpf _ogxmidpf _1qtqidpf _n9z4idpf _khufstnw _15pj1ule _d7ff1l7b _1j8614y2 _1qrc1l7b _4yng14y2 _1vzltlke _1ioh1l7b _vrjh14ae _1hhy73ad _1emz73ad _1efl8q0r _c2fy18uv _ynfu18uv _7el91vt6 _15pqglyw'][descendant::text()='List view']");
 
+        actions.waitForElementVisible("jira.findIssueByInitials.Locator", storyInitials);
+        actions.clickElement("jira.findIssueByInitials.Locator", storyInitials);
 
-        actions.waitForElementVisible("jira.findIssueByInitials.Locator", "WTS-123");
-        actions.clickElement("jira.findIssueByInitials.Locator", "WTS-123");
-        actions.clickElement("jira.findIssueByInitials.Locator", "WTS-123");
 
         actions.waitForElementClickable("jira.linkButton");
         actions.clickElement("jira.linkButton");
 
 
-//        actions.waitForElementClickable("jira.linkIssueButton");
-//        actions.clickElement("jira.linkIssueButton");
+        actions.waitForElementClickable("jira.linkIssueButton");
+        actions.clickElement("jira.linkIssueButton");
 
-        Thread.sleep(2000);
+
         actions.waitForElementVisible("//div[@class='issue-links-search__input']/input");
-//        actions.clickElement("//div[@class='issue-links-search__input']/input");
-        actions.typeValueInField("WTS-124", "//div[@class='issue-links-search__input']/input");
+
+        actions.typeValueInField(bugInitials, "//div[@class='issue-links-search__input']/input");
 
         actions.pressKey(ENTER);
 
-        //zoom out method:
-//        WebElement html = driver.findElement(By.tagName("//label[@for='issue-link-search']"));
-//        html.sendKeys(Keys.chord(Keys.CONTROL, Keys.SUBTRACT));
-//        html.sendKeys(Keys.chord(Keys.CONTROL, Keys.SUBTRACT));
 
-        //scroll up method:
-//        JavascriptExecutor js = (JavascriptExecutor) driver;
-//        js.executeScript("arguments[0].scrollTop -= 200", html);
+        WebElement searchBox = getWebDriver().findElement(By.xpath("//div[@class='issue-links-search__input']/input"));
+
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", searchBox);
+
 
         actions.waitForElementVisible("jira.finalLinkButton");
         actions.clickElement("jira.finalLinkButton");
