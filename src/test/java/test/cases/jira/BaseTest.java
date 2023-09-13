@@ -16,11 +16,11 @@ public class BaseTest {
 
     }
 
-//    @AfterClass
-//    public static void tearDown() {
-//
-//        UserActions.quitDriver();
-//    }
+    @AfterClass
+    public static void tearDown() {
+
+        UserActions.quitDriver();
+    }
 
     public void loginToDesiredProject(String projectInitials) {
 
