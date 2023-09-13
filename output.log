@@ -1,31 +1,32 @@
-2023-09-13 12:50:40,347 INFO  [main] Initializing WebDriver
-2023-09-13 12:50:43,915 INFO  [main] Initializing WebDriver
-2023-09-13 12:50:43,917 INFO  [main] Initializing WebDriver
-2023-09-13 12:50:43,917 INFO  [main] Initializing WebDriver
-2023-09-13 12:50:45,472 INFO  [main] Clicking on element jira.loginPage.continueButton
-2023-09-13 12:50:46,318 INFO  [main] Clicking on element jira.loginPage.logInButton
-2023-09-13 12:50:49,381 INFO  [main] Clicking on element jira.startPage.jiraSoftware
-2023-09-13 12:50:53,556 INFO  [main] Clicking on element jira.startPage.clickOnProject
-2023-09-13 12:50:55,872 INFO  [main] Clicking on element jira.createIssueButton
-2023-09-13 12:51:00,650 INFO  [main] Clicking on element jira.createIssueBox.issueType
-2023-09-13 12:51:01,978 INFO  [main] Clicking on element jira.createIssueBox.Priority
-2023-09-13 12:51:06,424 INFO  [main] Clicking on element jira.createIssueBox.createButton
-2023-09-13 12:51:07,821 INFO  [main] Initializing WebDriver
-2023-09-13 12:51:07,915 INFO  [main] Clicking on element //button[@data-testid='platform.ui.flags.common.ui.common-flag-v2-dismiss']
-2023-09-13 12:51:07,984 INFO  [main] Initializing WebDriver
-2023-09-13 12:51:07,984 INFO  [main] Initializing WebDriver
-2023-09-13 12:51:08,080 INFO  [main] Clicking on element jira.createIssueButton
-2023-09-13 12:51:10,659 INFO  [main] Clicking on element jira.createIssueBox.issueType
-2023-09-13 12:51:12,028 INFO  [main] Clicking on element jira.createIssueBox.Priority
-2023-09-13 12:51:18,494 INFO  [main] Clicking on element jira.createIssueBox.createButton
-2023-09-13 12:51:19,783 INFO  [main] Initializing WebDriver
-2023-09-13 12:51:19,865 INFO  [main] Clicking on element //button[@data-testid='platform.ui.flags.common.ui.common-flag-v2-dismiss']
-2023-09-13 12:51:19,927 INFO  [main] Initializing WebDriver
-2023-09-13 12:51:19,927 INFO  [main] Initializing WebDriver
-2023-09-13 12:51:19,961 INFO  [main] Clicking on element //button[@data-testid='issue-navigator.common.ui.refresh-button.refresh-button']
-2023-09-13 12:51:23,241 INFO  [main] Clicking on element //p[@class='_11127mnp _1q091wmp _pytkt94y _5hv9t94y _2x4g1n1a _12hv1n1a _x5bd1n1a _1rgf1n1a _1yzy15vq _bgrh15vq _v69yidpf _ogxmidpf _1qtqidpf _n9z4idpf _khufstnw _15pj1ule _d7ff1l7b _1j8614y2 _1qrc1l7b _4yng14y2 _1vzltlke _1ioh1l7b _vrjh14ae _1hhy73ad _1emz73ad _1efl8q0r _c2fy18uv _ynfu18uv _7el91vt6 _15pqglyw'][descendant::text()='List view']
-2023-09-13 12:51:23,359 INFO  [main] Clicking on element jira.findIssueByInitials.Locator
-2023-09-13 12:51:24,969 INFO  [main] Clicking on element jira.linkButton
-2023-09-13 12:51:25,193 INFO  [main] Clicking on element jira.linkIssueButton
-2023-09-13 12:51:26,210 INFO  [main] Initializing WebDriver
-2023-09-13 12:51:26,281 INFO  [main] Clicking on element jira.finalLinkButton
+2023-09-13 13:28:38,664 INFO  [main] Initializing WebDriver
+2023-09-13 13:28:43,006 INFO  [main] Initializing WebDriver
+2023-09-13 13:28:43,007 INFO  [main] Initializing WebDriver
+2023-09-13 13:28:43,008 INFO  [main] Initializing WebDriver
+2023-09-13 13:28:45,189 INFO  [main] Clicking on element jira.loginPage.continueButton
+2023-09-13 13:28:46,081 INFO  [main] Clicking on element jira.loginPage.logInButton
+2023-09-13 13:28:50,101 INFO  [main] Clicking on element jira.startPage.jiraSoftware
+2023-09-13 13:28:54,140 INFO  [main] Clicking on element jira.startPage.clickOnProject
+2023-09-13 13:28:55,407 INFO  [main] Clicking on element jira.createIssueButton
+2023-09-13 13:29:01,414 INFO  [main] Clicking on element jira.createIssueBox.issueType
+2023-09-13 13:29:02,735 INFO  [main] Clicking on element jira.createIssueBox.Priority
+2023-09-13 13:29:07,701 INFO  [main] Clicking on element jira.createIssueBox.createButton
+2023-09-13 13:29:09,284 INFO  [main] Initializing WebDriver
+2023-09-13 13:29:09,379 INFO  [main] Clicking on element //button[@data-testid='platform.ui.flags.common.ui.common-flag-v2-dismiss']
+2023-09-13 13:29:09,517 INFO  [main] Initializing WebDriver
+2023-09-13 13:29:09,518 INFO  [main] Initializing WebDriver
+2023-09-13 13:29:09,560 INFO  [main] Clicking on element jira.createIssueButton
+2023-09-13 13:29:12,196 INFO  [main] Clicking on element jira.createIssueBox.issueType
+2023-09-13 13:29:13,524 INFO  [main] Clicking on element jira.createIssueBox.Priority
+2023-09-13 13:29:20,727 INFO  [main] Clicking on element jira.createIssueBox.createButton
+2023-09-13 13:29:21,890 INFO  [main] Initializing WebDriver
+2023-09-13 13:29:21,987 INFO  [main] Clicking on element //button[@data-testid='platform.ui.flags.common.ui.common-flag-v2-dismiss']
+2023-09-13 13:29:22,055 INFO  [main] Initializing WebDriver
+2023-09-13 13:29:22,056 INFO  [main] Initializing WebDriver
+2023-09-13 13:29:22,091 INFO  [main] Clicking on element //button[@data-testid='issue-navigator.common.ui.refresh-button.refresh-button']
+2023-09-13 13:29:25,393 INFO  [main] Clicking on element //p[@class='_11127mnp _1q091wmp _pytkt94y _5hv9t94y _2x4g1n1a _12hv1n1a _x5bd1n1a _1rgf1n1a _1yzy15vq _bgrh15vq _v69yidpf _ogxmidpf _1qtqidpf _n9z4idpf _khufstnw _15pj1ule _d7ff1l7b _1j8614y2 _1qrc1l7b _4yng14y2 _1vzltlke _1ioh1l7b _vrjh14ae _1hhy73ad _1emz73ad _1efl8q0r _c2fy18uv _ynfu18uv _7el91vt6 _15pqglyw'][descendant::text()='List view']
+2023-09-13 13:29:25,513 INFO  [main] Clicking on element jira.findIssueByInitials.Locator
+2023-09-13 13:29:28,393 INFO  [main] Clicking on element jira.linkButton
+2023-09-13 13:29:28,775 INFO  [main] Clicking on element jira.linkIssueButton
+2023-09-13 13:29:29,820 INFO  [main] Initializing WebDriver
+2023-09-13 13:29:29,910 INFO  [main] Clicking on element jira.finalLinkButton
+2023-09-13 13:29:30,142 INFO  [main] Quitting WebDriver

@@ -3,6 +3,9 @@ package pages.jira;
 import junit.framework.TestResult;
 import org.openqa.selenium.*;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 import static com.telerikacademy.testframework.Utils.getUIMappingByKey;
 import static com.telerikacademy.testframework.Utils.getWebDriver;
 import static org.openqa.selenium.Keys.BACK_SPACE;
@@ -67,8 +70,14 @@ public class JiraIssuePage extends BaseJiraPage {
 
         actions.waitForElementVisible("jira.createIssue.successMessage");
         WebElement storyCreated = getWebDriver().findElement(By.xpath("//div[@data-testid='platform.ui.flags.common.ui.common-flag-v2']"));
-        storyInitials = storyCreated.getText().substring(16, 23);
-        System.out.println(storyInitials);
+        String storyCreatedText = storyCreated.getText();
+
+        Pattern pattern = Pattern.compile("\"(.*?)\"");
+        Matcher matcher = pattern.matcher(storyCreatedText);
+        if (matcher.find()) {
+            storyInitials = matcher.group(1);
+            System.out.println(storyInitials);
+        }
 
     }
     public void createBug(){
@@ -104,8 +113,14 @@ public class JiraIssuePage extends BaseJiraPage {
 
         actions.waitForElementVisible("jira.createIssue.successMessage");
         WebElement bugCreated = getWebDriver().findElement(By.xpath("//div[@data-testid='platform.ui.flags.common.ui.common-flag-v2']"));
-        bugInitials = bugCreated.getText().substring(16, 23);
-        System.out.println(bugInitials);
+        String bugCreatedText = bugCreated.getText();
+
+        Pattern pattern = Pattern.compile("\"(.*?)\"");
+        Matcher matcher = pattern.matcher(bugCreatedText);
+        if (matcher.find()) {
+            bugInitials = matcher.group(1);
+            System.out.println(bugInitials);
+        }
 
     }
 
